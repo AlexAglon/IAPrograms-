@@ -1,4 +1,3 @@
-//CREAMOS NUESTRO MAPA DE LETRAS QUE CONTENDRA EL VALOR A COLOCAR DE CADA LETRA
 let matriz_letras = new Map();
 matriz_letras.set("A","90");
 matriz_letras.set("B","91");
@@ -25,6 +24,7 @@ matriz_letras.set("W","51");
 matriz_letras.set("X","52");
 matriz_letras.set("Y","53");
 matriz_letras.set("Z","54");
+
 
 /*FUNCION PARA QUITAR ESPACIOS*/
 function quitaEspacios(mensaje){
@@ -56,6 +56,7 @@ function encriptaMensaje(mensajeSE){
     return mensajeEncriptado;
 }
 
+//funcion para orquestar todas las funciones anteriores
 function encripta(mensaje){
     let MSE = quitaEspacios(mensaje);
     let ME = encriptaMensaje(MSE);
