@@ -57,8 +57,23 @@ function encriptaMensaje(mensajeSE){
 }
 
 //funcion para orquestar todas las funciones anteriores
-function encripta(mensaje){
+function encripta(){
+    let mensaje = document.getElementById("Enc-input").value;//obtenemos el valor del input de encriptado
     let MSE = quitaEspacios(mensaje);
     let ME = encriptaMensaje(MSE);
-    console.log(ME);
+    document.getElementById("des-input").value = ME;
 }
+
+//para cuando el usuario de click en el boton de encriptar
+let btn_encriptado = document.getElementById("btn-e");
+btn_encriptado.addEventListener("click",encripta);
+
+
+//si el usuario quiere limpiar la pantalla
+function clearScreen(){
+    document.getElementById("Enc-input").value = "";
+    document.getElementById("des-input").value = "";
+}
+
+let btn_clear = document.getElementById("btn-cls");
+btn_clear.addEventListener("click",clearScreen);

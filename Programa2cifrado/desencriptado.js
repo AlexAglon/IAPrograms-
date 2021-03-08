@@ -67,9 +67,15 @@ function agregaNumerosArreglo(cadenaNumeros){//Recibe nuestra cadena de numeros
 }
 
 //funcion para orquestar todas las funciones anteriores
-function desencripta(CadenaNum){
-    let AN = agregaNumerosArreglo(CadenaNum);
-    let mensaje = desencriptaCadena(AN);
-    console.log(mensaje);
+function desencripta(){
+    let cadenaNum = document.getElementById("des-input").value;
+    let AN = agregaNumerosArreglo(cadenaNum);
+    let msj = desencriptaCadena(AN);
+    msj = msj.toLowerCase();
+    document.getElementById("Enc-input").value = msj;
     arr_numeros = [];
 }
+
+//para cuando el usuario de click en el boton de desencriptar
+let btn_desencriptado = document.getElementById("btn-d");
+btn_desencriptado.addEventListener("click",desencripta);
