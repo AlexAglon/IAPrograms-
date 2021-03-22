@@ -59,3 +59,10 @@ body{
     font-weight: 900;
     transition: 0.5s;
 }
+
+footer{
+    background-color: black;
+    color: white;
+    padding:25px;
+    text-align: center;
+}
