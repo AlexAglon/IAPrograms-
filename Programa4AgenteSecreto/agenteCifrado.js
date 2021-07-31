@@ -89,9 +89,11 @@ function cifrado() {
     }
 }
 
-function pruebas(mensaje) {
-    let MSE = quitaEspacios(mensaje);
-    creaFilas(MSE);
-    cifrado();
-    imprimeMensaje();
-}
+// function pruebas(mensaje) {
+//     let MSE = quitaEspacios(mensaje);
+//     console.log(MSE);
+//     creaFilas(MSE);
+//     console.log(arrCadenas);
+//     //cifrado();
+//     //imprimeMensaje();
+// }

@@ -1,0 +1,49 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    background: rgb(197,102,118);
+    background: linear-gradient(90deg, rgba(197,102,118,1) 0%, rgba(233,136,146,1) 46%, rgba(198,103,120,1) 100%);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+#cont-p{
+    background-color: #334258;
+    height: 80vh;
+    width: 70vw;
+    border-radius: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+/*estilos de boton*/
+#startB{
+    background-color: #5ccbba;
+    color: white;
+    margin-top: 10%;
+    width: 20vw;
+    height: 4vh;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+#cont-predicciones{
+    border:1px solid #5ccbba;
+    color: #5ccbba;
+    width: 50vw;
+    height: 10vh;
+    padding: 10px;
+
+    overflow: scroll;
+    letter-spacing: 5px;
+}
